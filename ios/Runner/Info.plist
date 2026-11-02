@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>عيادتي</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>clinic_manager_flutter</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<!--
+		Explicitly false (this is also the default when the key is absent,
+		but stated here so it isn't accidentally set to true later): lets
+		the app run in iPad Split View / Slide Over alongside another app,
+		instead of being forced full-screen. The app's own layout already
+		adapts to the narrower widths this produces — see AppShell's
+		isWide breakpoint in lib/core/widgets/app_shell.dart.
+	-->
+	<key>UIRequiresFullScreen</key>
+	<false/>
+	<!--
+		Required for the storage-path picker (see
+		StorageSettingsPage / file_picker's getDirectoryPath) to reach
+		locations outside the app's own sandbox, including an external drive
+		connected to the iPad through the Files app.
+	-->
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>UISupportsDocumentBrowser</key>
+	<true/>
+	<!-- Needed to attach visit photos (eye photos, old prescriptions). -->
+	<key>NSCameraUsageDescription</key>
+	<string>يحتاج التطبيق للوصول إلى الكاميرا لالتقاط صور ترفق بزيارة المريض.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>يحتاج التطبيق للوصول إلى الصور لإرفاق صورة موجودة بزيارة المريض.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>يستخدم التطبيق الشبكة المحلية لربط جهاز الطبيب بجهاز السكرتيرة بدون إنترنت.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>يحتاج التطبيق للميكروفون لتحويل كلامك إلى نص في نموذج الزيارة.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>يحتاج التطبيق للتعرف على الكلام لتحويل إملائك الصوتي إلى نص.</string>
+</dict>
+</plist>
